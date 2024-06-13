@@ -1,0 +1,52 @@
+{% extends 'main.html' %}
+{% block title %}
+<title>Speech Recognition</title>
+{% endblock title %}
+{% block body %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/test.js') }}"></script>
+</head>
+
+<div class="container-1">
+    <h1>Speech Recognition</h1>
+    <p>Convert speech to text. This free speech recognition tool allows you to convert spoken words into text.</p>
+    <img class="bckimg" src="https://www.online-convert.com/assets/img/placeholder_hero.svg" alt="">
+</div>
+
+<div class="container-2 py-5">
+    <header class="text-white">
+        <img src="https://bootstrapious.com/i/snippets/sn-img-upload/image.svg" alt="" width="150" class="mb-4">
+    </header>
+    <!-- Display the extracted text -->
+    <div class="extracted-text">
+        <h2 class="heading">Extracted Text:</h2>
+        <p class="output">{{ extracted_text }}</p>
+        <button id="downloadButton">Download Text</button>
+    </div>
+</div>
+
+<div class="mini">
+    <div class="container-3 row py-4">
+        <div class="col-lg-6 mx-auto">
+            <!-- Speech recognition input -->
+            <form method="post" action="/SpeechRecognition" enctype="multipart/form-data">
+                <div class="container-4">
+                    <div class="custom-file-upload">
+                        <label for="upload" class="file-label">Choose Audio File</label>
+                        <input id="upload" type="file" class="form-control border-0" name="audio" onchange="handleAudioFileSelect(this);">
+                        <span id="file-name-placeholder">No file chosen</span>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" name="audio">Start Speech Recognition</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock body %}
+</body>
+</html>

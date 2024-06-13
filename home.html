@@ -1,0 +1,81 @@
+{% extends 'main.html' %}
+
+{% block title %}
+    <title>Home</title>
+{% endblock title %}
+
+{% block body %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/test.js') }}"></script>
+</head>
+<body>
+    <h2 class="content">Image to Text Converter</h2>
+
+    <section id="imageToTextSection">
+        <div class="list-2">
+            <p class="sublist">
+                Welcome to our Image to Text Converter tool! With this feature, you can easily extract text from images, making it a breeze to digitize printed documents, handwritten notes, or any text-based content within an image.
+            </p>
+            <p id="one-line">
+                How it works:
+            </p>
+        </div>
+        <button class="direct-1" onclick="redirectToImage2Text()">ImageToText</button>
+
+        <div>
+            <ol class="list-1">
+                <li>
+                    Click the "Choose File" button to select an image from your device. Supported formats include JPEG, PNG, and more.
+                </li>
+                <li>
+                    Once you've selected your image, click the "Convert" button to initiate the conversion process.
+                </li>
+                <li>
+                    Our powerful image recognition technology will process the image and extract any visible text.
+                </li>
+                <li class="tension">4.The extracted text will be displayed below, allowing you to copy and paste it for further use.>
+                  
+                </li>
+            </ol>
+        </div>
+        {# <div>
+            <p class="list-3">
+                Whether you need to transcribe a printed article, decode handwritten notes, or simply extract text from an image, our Image to Text Converter is here to help. It's a handy tool for students, researchers, and professionals who want to save time on manual data entry.
+            </p>
+        </div>  #}
+    </section>
+
+
+
+
+    <section id="speechRecognitionSection">
+        <h2 class="speech">Speech Recognition</h2>
+        <p class="Welcome">
+            Welcome to our Speech Recognition tool! Our advanced technology allows you to convert spoken words into text effortlessly. Whether you're transcribing interviews, recording meeting notes, or simply want a convenient way to capture your thoughts, our Speech Recognition feature has you covered.
+        </p>
+        <p class="works">
+            How it works:
+        </p>
+        <ol class="order-list">
+            <li>
+                Click the "Start Recording" button to begin capturing your speech.
+            </li>
+            <li>
+                Speak clearly into your microphone. Our system will process your speech in real-time.
+            </li>
+            <li>
+                When you're finished, click the "Stop Recording" button.
+            </li>
+            <li>
+                Your spoken words will be instantly transcribed into text and displayed on the screen.
+            </li>
+        </ol>
+        
+    </section>
+    
+</body>
+</html>
+{% endblock body %}

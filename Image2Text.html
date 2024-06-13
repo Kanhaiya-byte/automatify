@@ -1,0 +1,100 @@
+{% extends 'main.html' %}
+{% block title %}
+<title>Image2Text</title>
+{% endblock title %}
+{% block body %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/test.js') }}"></script>
+</head>
+
+<div class="container-1">
+    <h1>Convert image to text</h1>
+    <p>Convert your images to text. Extract text from images, photos, and other pictures. This free OCR converter allows you to grab text from images and convert it to a plain text TXT file.</p>
+    <img class="bckimg" src="https://www.online-convert.com/assets/img/placeholder_hero.svg" alt="">
+</div>
+
+<div class="container-2 py-5">
+    <!-- For demo purpose -->
+    <header class="text-white">
+        <img src="https://bootstrapious.com/i/snippets/sn-img-upload/image.svg" alt="" width="150" class="mb-4">
+    </header>
+     <!-- Display the extracted text -->
+     <div class="extracted-text">
+        <h2 class="heading">Extracted Text:</h2>
+        <p class="output">{{ extracted_text }}</p>
+        <button id="downloadButton">Download Text</button>
+    </div>
+</div>
+
+<div class="mini">
+    <div class="container-3 row py-4">
+        <div class="col-lg-6 mx-auto">
+            <!-- Upload image input -->
+            <form method="post" enctype="multipart/form-data" action="/Image2Text">
+                <div class="container-4">
+                    <div class="custom-file-upload">
+                        <label for="upload" class="file-label">Choose File</label>
+                        <input id="upload" type="file" onchange="readURL(this);" class="form-control border-0" name="image" >
+                        <span id="file-name-placeholder">No file chosen</span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Upload and Extract Text</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock body %} 
+</body>
+</html> 
+{#
+{% extends 'main.html' %}
+{% block title %}
+<title>Image2Text</title>
+{% endblock title %}
+{% block body %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Convert your images to text. Extract text from images, photos, and other pictures. This free OCR converter allows you to grab text from images and convert it to a plain text TXT file.">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/test.js') }}"></script>
+</head>
+
+<div class="container-1">
+    <h1>Convert image to text</h1>
+    <p>Convert your images to text. Extract text from images, photos, and other pictures. This free OCR converter allows you to grab text from images and convert it to a plain text TXT file.</p>
+    <img class="bckimg" src="https://www.online-convert.com/assets/img/placeholder_hero.svg" alt="">
+</div>
+
+<div class="container-2 py-5">
+        <header class="text-white">
+        <img src="https://bootstrapious.com/i/snippets/sn-img-upload/image.svg" alt="" width="150" class="mb-4">
+    </header>
+          <div class="extracted-text">
+        <h2>Extracted Text:</h2>
+        <p class="output extracted-text">{{ extracted_text }}</p>
+        <button id="downloadButton" type="submit" disabled>Download Text</button>
+    </div>
+</div>
+
+<div class="mini">
+    <div class="container-3 row py-4">
+        <div class="col-lg-6 mx-auto">
+                        <form method="post" enctype="multipart/form-data" action="/Image2Text">
+                <div class="container-4">
+                    <div class="custom-file-upload">
+                        <label for="upload" class="file-label">Choose File</label>
+                        <input id="upload" type="file" onchange="readURL(this);" class="form-control border-0" name="image" >
+                        <span id="file-name-placeholder">No file chosen</span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Upload and Extract Text</button>
+{% endblock body %} 
+</body>
+</html> #}
+
+               

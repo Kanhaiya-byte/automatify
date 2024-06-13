@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    
+    /* background-color: #757f9a; */
+    background-image: linear-gradient(147deg, #e2e5eb 0%, #d7dde8 100%);
+}
+
+
+.container-1{
+    position: absolute;
+    width: 100vw;
+    height: 35vh;
+    background: #004b00c2;
+    border: 2px solid darkseagreen;
+    
+}
+.bckimg{
+    position: absolute;
+    width: 23%;
+    right: 9%;
+}
+h1{
+    color: white;
+    position: absolute;
+    left: 15vw;
+    top: 2vh;
+    font-size: 3vw;
+}
+p{
+    color: wheat;
+    width: 27%;
+    position: absolute;
+    left: 16vw;
+    top: 16vh;
+}
+
+
+.mini{
+    width: 68%;
+    height: 44vh;
+    position: absolute;
+    top: 54%;
+    left: 29%;
+    margin: 0vw -15vw;
+    border-width: 2px;
+    border-radius: 8px;
+    border-style: dashed;
+    border-color: white;
+    z-index: 1;
+}
+
+.container-2{
+    position: absolute;
+    right: 41%;
+    top: 53%;
+    width: 69%;
+    height: 46vh;
+    margin: 0px -23vw;
+    /* background: #63bb67; */
+    background: #4caf50;
+    border-radius: 8px;
+    
+    
+}
+.text-white{
+    display: flex;
+    justify-content: center;
+    margin: 20px
+}
+
+.container-3{
+    position: absolute;
+    right: 33%;
+    top: 30vh;
+}
+.container-4{
+    position: absolute;
+    /* width: 10vw; */
+    margin: -43px -16vw;
+    font-size: 42px;
+}
+
+
+/* Hide the default file input element */
+#upload {
+    display: none;
+  }
+  
+  /* Style the label as the custom file upload button */
+  .file-label {
+    display: inline-block;
+    padding: 2px 4px;
+    font-size: 22px;
+    border-radius: 5px;
+    color: green;
+    background-color:rgb(240, 243, 242); /* Add your desired background color here */
+    cursor: pointer;
+    outline: 3px solid rgb(81, 75, 75);
+    outline-offset: -4px;
+    transition: 0.3s;
+  }
+  
+  /* Style the label when hovering over the custom file upload button */
+  .file-label:hover {
+    color: white;
+    background-color: rgb(235, 181, 6); /* Add your desired hover background color here */
+    outline-offset: 3px;
+
+  }
+ .btn{
+    display: inline-block;
+    padding: 2px 4px;
+    font-size: 18px;
+    position: absolute;
+    width: 14vw;
+    bottom: -6vh;
+    left: -1vw;
+    color: green;
+    border-radius: 3px;
+    border-color: white;
+    background-color: rgb(239, 230, 230);
+    cursor: pointer;
+    outline: 3px solid rgb(81, 75, 75) ;
+    outline-offset: -4px;
+    transition: 0.3s;
+ }
+ #downloadButton{
+    position: absolute;
+    padding: 2px 4px;
+    bottom: 2vh;
+    border-radius: 3px;
+    border-color: white;
+    color: green;
+    background-color: rgb(239, 230, 230);
+    left: 60vh;
+    cursor: pointer;
+    width: 14vw;
+    height: 6vh;
+    font-size: 18px;
+    outline: 3px solid rgb(81, 75, 75) ;
+    outline-offset: -4px;
+    transition: 0.3s;
+}
+ .btn:hover{
+    color: white;
+    background-color:rgb(235, 181, 6);
+    outline-offset: 3px;
+    
+ }
+ #file-name-placeholder{
+    font-size: 20px;
+ }
+.extracted-text{
+    position: absolute;
+    bottom: -37vh;
+    left: 0vw;
+    width: 68vw;
+    height: 35vh;
+    background-color: #4caf50;
+    border-radius: 5px;
+ }
+
+ .heading{
+    position: absolute;
+    bottom: 28vh;
+    width: 11vw;
+    left: 28vw;
+    font-size: 25px;
+}
+.output{
+    color: rgb(227, 115, 3);
+    position: absolute;
+    width: 78%;
+    height: 16vh;
+    top: 7vh;
+    left: 12vw;
+    max-height: 20vh;
+    overflow-y: auto;
+    font-size: 18px;
+    
+}
+
+/* #downloadButton {
+    display: none; 
+} */
+
+#downloadButton:hover{
+    color: white;
+    background-color:rgb(235, 181, 6);
+    outline-offset: 3px;
+}
+
+#imageToTextSection{
+    background-color: black;
+    position: absolute;
+    top: 60vh;
+}
+.content{
+    /* background-color: rgb(13, 13, 13); */
+    color: purple;
+    position: absolute;
+    width: 100%;
+    left: 35%;
+    top: 15vh;
+}
+.list-1{
+    display: inline-flex;
+    height: 28vh;
+    margin: 2vh;
+    padding: 5vh;
+    color: grey;
+}
+.list-2{
+    position: absolute;
+    top: -37vh;
+    
+    background-color: black;
+    width: 100%;
+    height: 17vh;
+}
+.sublist{
+    position: absolute;
+    top: 4vh; 
+    color: grey;
+    width: 79%; 
+    left: 2%;
+   
+}
+#one-line{
+    /* background-color: #4caf50; */
+    position: absolute;
+    left: 1%;
+    top: 232%;
+    
+
+}
+.list-3{
+    background-color: rebeccapurple;
+    width: 79%;
+    height: 18vh;
+    bottom: 0;
+}
+.tension{
+    display: flex;
+    margin-left: 25px;
+}
+.direct-1{
+    position: absolute;
+    top: -30%;
+    left: 48%;
+    border: -13px;
+    border-radius: 5px;
+    width: 8%;
+    background-color: darkslategrey;
+    color: white;
+    height: 6vh;
+
+}
+
+#speechRecognitionSection{
+    position: absolute;
+    top: 112%;
+    /* height: 95vh;
+    width: 100%; */
+    background-color: rebeccapurple;
+}
+.speech{
+    margin-left: 37vw;
+}
+.Welcome{
+    color: white;
+}
+.works{
+    color: #4caf50;
+    margin-left: -14vw;
+    top: 39vh;
+}
+order-list{
+    color: red;
+    position: absolute;
+    position: absolute;
+    top: 120vh;
+}
+
+
+
+  
+  
+  
+
+
+
+
+
+
+
